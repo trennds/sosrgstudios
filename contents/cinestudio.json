@@ -1,0 +1,14 @@
+{
+  "features": [
+    {
+      "title": "Stunning Graphics",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam laborum asperiores, iusto corporis officiis atque dignissimos voluptas ratione veniam dolorum!",
+      "isLeft": true
+    },
+    {
+      "title": "Romit Karmakar",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam laborum asperiores, iusto corporis officiis atque dignissimos voluptas ratione veniam dolorum!",
+      "isLeft": false
+    }
+  ]
+}
