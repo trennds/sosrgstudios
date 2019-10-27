@@ -7,7 +7,10 @@
 </template>
 
 <style>
-
+  body {
+    background-color: black !important;
+    overflow-x: hidden;
+  }
 </style>
 
 <script>

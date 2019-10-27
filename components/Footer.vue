@@ -30,6 +30,7 @@
 #footer {
   height: 200px;
   align-content: center;
+  color: white !important;
 }
 
 .footer-google,
