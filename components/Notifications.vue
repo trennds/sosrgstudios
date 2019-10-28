@@ -1,16 +1,26 @@
 <template>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-4 col-lg-8 offset-md-1">
-        <div class="role-container">
-          <h1 class="role-title">{{ notifs[currIndex].title }}</h1>
-          <p class="role-description">
-            {{ notifs[currIndex].description }}
-          </p>
+  <div v-observe-visibility="print">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4 col-lg-8 offset-md-1">
+          <div class="role-container" :class="currentClass">
+            <h1 class="role-title">{{ notifs[currIndex].title }}</h1>
+            <p class="role-description">
+              {{ notifs[currIndex].description }}
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-1 col-lg-2 offset-md-1 pointer-container d-none d-lg-block">
-        <div class="pointer" :class="index == currIndex ? 'pointer-active' : 'none'" v-for="(item, index) in notifs" :key="item.title" @click="click(index)"></div>
+        <div
+          class="col-sm-1 col-lg-2 offset-md-1 pointer-container d-none d-lg-block"
+        >
+          <div
+            class="pointer"
+            :class="index == currIndex ? 'pointer-active' : 'none'"
+            v-for="(item, index) in notifs"
+            :key="item.title"
+            @click="click(index)"
+          ></div>
+        </div>
       </div>
     </div>
   </div>
@@ -18,12 +28,17 @@
 
 <script>
 import data from '@/contents/notifications.json'
+import Vue from 'vue'
+import VueObserveVisibility from 'vue-observe-visibility'
+
+Vue.use(VueObserveVisibility)
 
 export default {
   data() {
     return {
       currIndex: 0,
-      notifs: data
+      notifs: data,
+      currentClass: 'none'
     }
   },
   mounted() {
@@ -34,8 +49,15 @@ export default {
       this.currIndex = index
     },
     changeSlide() {
-      if(this.notifs.length - 1 ==  this.currIndex) this.currIndex = 0
+      if (this.notifs.length - 1 == this.currIndex) this.currIndex = 0
       else this.currIndex++
+    },
+    print(isVisible, entry) {
+      if (isVisible) {
+        this.currentClass = 'brighten'
+      } else {
+        this.currentClass = 'none'
+      }
     }
   }
 }
@@ -54,7 +76,7 @@ export default {
   transition: opacity 2s, box-shadow 3s;
 }
 
-.role-container:hover {
+.brighten {
   opacity: 1;
   box-shadow: 3px 4px 35px 19px rgba(255, 255, 255, 1);
 }

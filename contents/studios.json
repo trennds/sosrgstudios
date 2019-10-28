@@ -1,32 +1,38 @@
 [{
         "image": "cine.jpg",
         "title": "SosrG Cine Studio",
-        "description": "This is the parent studio where movie editing, final cutting and production management takes place."
+        "description": "This is the parent studio where movie editing, final cutting and production management takes place.",
+        "url": "/cinestudio"
     },
     {
         "image": "acting.jpg",
         "title": "SosrG Acting and Casting Studio",
-        "description": "In this studio cast actors were selected, and acting were recorded in the sets."
+        "description": "In this studio cast actors were selected, and acting were recorded in the sets.",
+        "url": "/actingstudio"
     },
 
     {
         "image": "music.jpg",
         "title": "SosrG Music Studio",
-        "description": "In this studio music and voices are recorded, given special effects, dubbed and finally merged into the video."
+        "description": "In this studio music and voices are recorded, given special effects, dubbed and finally merged into the video.",
+        "url": "/musicstudio"
     },
     {
         "image": "dance.jpg",
         "title": "SosrG Dance Studio",
-        "description": "Here dancers practice, create content for channels and movies and show their various dance skills related to dance."
+        "description": "Here dancers practice, create content for channels and movies and show their various dance skills related to dance.",
+        "url": "/dancestudio"
     },
     {
         "image": "cine.jpg",
         "title": "SosrG Art and Craft Studio",
-        "description": "Here we provide artists to perform different forms of art, expose their art to the world and preserving the rich culture of our country."
+        "description": "Here we provide artists to perform different forms of art, expose their art to the world and preserving the rich culture of our country.",
+        "url": "/artstudio"
     },
     {
         "image": "literature.jpg",
         "title": "SosrG Literary Studio",
-        "description": "We help in publishing and providing a platform for the storyteller, writer, poet, & lyricist."
+        "description": "We help in publishing and providing a platform for the storyteller, writer, poet, & lyricist.",
+        "url": "/literarystudio"
     }
 ]

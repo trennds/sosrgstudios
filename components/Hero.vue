@@ -28,6 +28,7 @@ export default {
   methods: {
     print(isVisible, entry) {
       if (isVisible) {
+        console.log('ewbdf')
         this.revealText = 'revealText'
         this.$store.commit('change', 'none')
       } else {
@@ -59,6 +60,7 @@ h2 {
   top: 40%;
   transform: translate(-50%, -60%);
 }
+
 #hero h1 {
   text-align: center;
   font-size: 5rem;
@@ -66,12 +68,14 @@ h2 {
 #hero h2 {
   font-size: 2rem;
 }
+
 #hero .bg-video {
   position: relative;
   right: 0;
   bottom: 0;
   left: 0px;
   padding: 0;
+  /* opacity: 0.7; */
 }
 
 @media screen and (max-width: 700px) {
@@ -79,11 +83,21 @@ h2 {
     height: 100vh;
   }
   #hero h1 {
-        font-size: 3rem;
+        font-size: 4rem;
+        margin-left: 2px !important;
+        margin-right: 2px !important;
     }
     #hero h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
+
+   #hero .content {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -20%);
+}
 }
 
 @media screen and (min-width: 701px){

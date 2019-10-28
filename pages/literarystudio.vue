@@ -1,39 +1,19 @@
 <template>
   <div>
     <Hero
-      videoUrl="forest.mp4"
-      title="Welcome to Cine Studio"
-      description="This is the parent studio where movie editing, final cutting and production management takes place."
+      videoUrl="book.mp4"
+      title="Welcome to SorG Literary Studio"
+      description=""
     />
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
           <h1 class="display-4">About the Studio</h1>
           <p>
-            We fulfil the need of filmmakers in every region of the
-            country/world. ie: Casting(Crew and cast), Production Unit, Post
-            Production(Editing,VFX,BGM,CC,CGI,DI etc),Music Direction, Art and
-            costume Designing, Distributors, and Publicity as well as Marketing
-            And also our expert is available to answer all the questions related
-            to filmmaking or queries regarding function of production house.
+            We help in publishing and providing a platform for the storyteller,
+            writer, poet, and lyricist and also there an expert available to
+            answer all the queries regarding writing section or it’s history.
           </p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="title-container">
-          <h1 class="display-4">Our Works</h1>
-          <div class="works">
-            <img src="@/assets/cowmedy.jpeg" alt="cowmedy-poster" />
-            <h2>
-              <a
-                href="https://www.facebook.com/SpinningWorldProductions/videos/t.100002973274636/1532307493545761/?type=2&video_source=user_video_tab"
-                class="text-white"
-                >Cawmedy - Gaurav Asri</a
-              >
-            </h2>
-          </div>
         </div>
       </div>
     </div>
@@ -185,26 +165,6 @@ export default {
     font-size: 1.5rem;
     padding-right: 10px;
   }
-}
-
-.works img {
-  width: 40%;
-  padding: 5px;
-  margin: 25px 0px;
-}
-
-.works {
-  margin-bottom: 60px;
-}
-
-.works h2::after {
-  content: '';
-  position: absolute;
-  width: 50%;
-  background-color: white;
-  height: 2px;
-  left: 50%;
-  transform: translate(-50%, 3.5rem);
 }
 
 @media screen and (min-width: 992px) {

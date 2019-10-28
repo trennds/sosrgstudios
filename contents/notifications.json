@@ -1,17 +1,21 @@
 [{
-        "title": "lorem Ipsum",
-        "description": "wdwjidwjdpo wqqwifdewif ewewifuo hewfiowefewhffh  oih"
+        "title": "Free Registration",
+        "description": "This is a limited time offer, register with us to join our network."
     },
     {
-        "title": "lorem Ipsum riwri ",
-        "description": "wdwjidwjdpo wqqwifdewif ewewifuo hewfiowefewhffh  oih"
+        "title": "Post & Share",
+        "description": "Now you can post your profile and work with us."
     },
     {
-        "title": "lorem Ipsum trur",
-        "description": "wdwjidwjdpo wqqwifdewif ewewifuo hewfiowefewhffh  oih"
+        "title": "Connecting Personality",
+        "description": "We will have our respective connecting personality as well as an expert personality."
     },
     {
-        "title": "lorem Ipsdww m trur",
-        "description": "wdwjidwjdpo wqqwifdewif ewewifuo hewfiowefewhffh  oih"
+        "title": "Advisors",
+        "description": "We will have our respective advisor and mentor."
+    },
+    {
+        "title": "HOD",
+        "description": "We will have an H.O.D. from each studios."
     }
 ]

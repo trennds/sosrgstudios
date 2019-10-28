@@ -2,7 +2,7 @@
   <div>
     <Hero
       videoUrl="hero.mp4"
-      title="Welcome to Art Industries"
+      title="Welcome to an Art Industry."
       description="A platform to perform."
     />
     <div class="container">
@@ -15,8 +15,7 @@
           Welcome to SosrG StudioS
         </h1>
         <p class="lead text-white" align="center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit quasi
-          optio fugit nihil architecto!
+          Here we innovate, create and work together with the creative minds in the industry.
         </p>
       </div>
       <hr />
@@ -35,19 +34,14 @@
       <hr />
     </div>
     <Notifications />
-    <Banner />
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
-import Banner from '@/components/Banner'
-import Notifications from '@/components/Notifications'
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
 
-Vue.use(BootstrapVue)
+import Notifications from '@/components/Notifications'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -56,7 +50,6 @@ export default {
   components: {
     Hero,
     Services,
-    Banner,
     Notifications
   }
 }

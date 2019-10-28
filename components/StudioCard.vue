@@ -4,7 +4,7 @@
     <img :src="image" alt="..." />
     <div class="desc">
       <div class="title" align="center">
-        <a href="cinestudio.html" class="text-white">{{ title }}</a>
+        <nuxt-link :to="url" class="text-white">{{ title }}</nuxt-link>
       </div>
       <p align="center" class="text-white">
         {{ description }}
@@ -22,7 +22,7 @@ import VueObserveVisibility from 'vue-observe-visibility'
 Vue.use(VueObserveVisibility)
 
 export default {
-  props: ['image', 'title', 'description'],
+  props: ['image', 'title', 'description', 'url'],
   data() {
     return {
       cardClass: ''
@@ -41,6 +41,7 @@ export default {
 <style scoped>
 .service {
   border: 1px solid;
+  border-radius: 10px;
   box-shadow: 1px -1px 32px 1px rgba(255, 255, 255, 0.85);
 }
 
@@ -69,6 +70,7 @@ export default {
 
 .service img {
   width: 100%;
+  border-radius: 10px;
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
   transition: clip-path 1s;

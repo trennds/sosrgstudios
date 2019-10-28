@@ -18,7 +18,7 @@
         <p
           class="lead p-3"
           align="middle"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur!</p>
+        >SosrG StudioS, India.</p>
       </div>
       <div class="col-3"></div>
     </div>
