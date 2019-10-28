@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Hero
+    <HeroIndex
       videoUrl="hero.mp4"
       title="Welcome to an Art Industry."
-      description="A platform to perform."
+      description="SosrG Studios"
     />
     <div class="container">
       <div class="row justify-content-center p-4">
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Hero from '@/components/Hero'
+import HeroIndex from '@/components/HeroIndex'
 import Services from '@/components/Services'
 
 import Notifications from '@/components/Notifications'
@@ -48,7 +48,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   components: {
-    Hero,
+    HeroIndex,
     Services,
     Notifications
   }
