@@ -5,21 +5,21 @@
       title="Welcome to an Art Industry."
       description="SosrG Studios"
     />
-    <!-- <div class="container">
+    <div class="container">
       <div class="row justify-content-center p-4">
         <h1
           class="display-3 text-white"
           align="center"
           style="font-family: 'Bitter', serif;"
         >
-          Welcome to SosrG StudioS
+          About SosrG StudioS
         </h1>
         <p class="lead text-white" align="center">
           Here we innovate, create and work together with the creative minds in the industry.
         </p>
       </div>
       <hr />
-    </div> -->
+    </div>
     <Services />
     <div class="container">
       <div class="row justify-content-center p-3">

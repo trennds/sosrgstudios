@@ -39,6 +39,7 @@
 import data from '@/contents/notifications.json'
 import Vue from 'vue'
 import VueObserveVisibility from 'vue-observe-visibility'
+import axios from 'axios'
 
 Vue.use(VueObserveVisibility)
 
@@ -51,7 +52,11 @@ export default {
     }
   },
   mounted() {
+    var self = this
     setInterval(this.changeSlide, 4000)
+    axios.get('https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/notifications/index').then((res) => {
+      self.notifs = res.data.Items
+    })
   },
   methods: {
     click(index) {
