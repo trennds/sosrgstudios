@@ -22,6 +22,15 @@
           ></div>
         </div>
       </div>
+      <div class="row justify-content-between pointer-row">
+         <div
+            class="pointer"
+            :class="index == currIndex ? 'pointer-active' : 'none'"
+            v-for="(item, index) in notifs"
+            :key="item.title"
+            @click="click(index)"
+          ></div>
+      </div>
     </div>
   </div>
 </template>
@@ -122,5 +131,34 @@ export default {
   border-color: blue;
   border-width: 5px;
   border-style: solid;
+}
+
+.pointer-row {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pointer-row div {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 699px) {
+  .role-container .role-title {
+  font-size: 2rem;
+}
+.role-container .role-description {
+  font-size: 1.5rem;
+}
+
+.role-container h1:after {
+  transform: translate(0%, 50px);
+}
+}
+
+@media screen and (min-width: 700px) {
+  .pointer-row {
+    visibility: hidden;
+  }
 }
 </style>

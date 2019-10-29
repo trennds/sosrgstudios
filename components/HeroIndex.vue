@@ -64,11 +64,11 @@ h2 {
 
 #hero h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.25rem;
 }
 #hero h2 {
-  margin-top: 5px;
-  font-size: 3rem;
+  margin-top: 40px;
+  font-size: 5.5rem;
 }
 
 #hero p {
@@ -87,6 +87,7 @@ h2 {
 @media screen and (max-width: 700px) {
   #hero .bg-video {
     height: 100vh;
+    transform: translateX(-50%);
   }
   #hero h1 {
         font-size: 3rem;

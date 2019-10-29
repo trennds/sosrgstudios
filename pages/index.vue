@@ -5,7 +5,7 @@
       title="Welcome to an Art Industry."
       description="SosrG Studios"
     />
-    <div class="container">
+    <!-- <div class="container">
       <div class="row justify-content-center p-4">
         <h1
           class="display-3 text-white"
@@ -19,7 +19,7 @@
         </p>
       </div>
       <hr />
-    </div>
+    </div> -->
     <Services />
     <div class="container">
       <div class="row justify-content-center p-3">
