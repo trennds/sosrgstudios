@@ -45,8 +45,8 @@
       </div>
       <div class="roles-container">
         <div class="row">
-          <div class="col-lg-6 p-4" v-for="item in content.roles" :key="item">
-            <Role :name="item" />
+          <div class="col-lg-6 p-4" v-for="item in roles" :key="item">
+            <Role :name="item.name" />
           </div>
         </div>
       </div>
@@ -63,6 +63,8 @@ import Role from '@/components/Role'
 import Youtube from '@/components/Youtube'
 import contents from '@/contents/cinestudio.json'
 
+import axios from 'axios'
+
 export default {
   components: {
     Feature,
@@ -74,8 +76,15 @@ export default {
   },
   data() {
     return {
-      content: contents
+      content: contents,
+      roles: []
     }
+  },
+  mounted() {
+    var self = this
+    axios.get('https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/roles/c55ea5e0-f2a9-11e9-b681-eb6326813aa9').then(res => {
+      self.roles = res.data
+    })
   }
 }
 </script>
