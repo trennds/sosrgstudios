@@ -28,7 +28,7 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
           <b-button size="sm" class="my-2 my-sm-0" type="submit"
-            ><a href="https://connect.sosrgstudios.com" class="text-white">SosrG Connect</a></b-button
+            ><a href="https://connect.sosrgstudios.com/welcome" class="text-white">SosrG Connect</a></b-button
           >
         </b-nav-form>
       </b-navbar-nav>
