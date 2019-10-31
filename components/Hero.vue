@@ -70,6 +70,7 @@ h2 {
 }
 
 #hero .bg-video {
+  background-position: center;
   position: relative;
   right: 0;
   bottom: 0;
@@ -81,6 +82,7 @@ h2 {
 @media screen and (max-width: 700px) {
   #hero .bg-video {
     height: 100vh;
+    transform: translateX(-50%);
   }
   #hero h1 {
         font-size: 4rem;

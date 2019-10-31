@@ -3,7 +3,7 @@
     <Hero
       videoUrl="motion.mp4"
       title="Welcome to SosrG Art and Craft Studio"
-      description="Here we provide artists to perform different forms of art."
+      description=""
     />
     <div class="container">
       <div class="row justify-content-center">

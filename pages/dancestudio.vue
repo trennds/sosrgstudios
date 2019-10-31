@@ -3,7 +3,7 @@
     <Hero
       videoUrl="dance.mp4"
       title="Welcome to SosrG Dance Studio"
-      description="Here dancers practice, create content for channels and movies and show their various dance skills related to dance."
+      description=""
     />
     <div class="container">
       <div class="row justify-content-center">

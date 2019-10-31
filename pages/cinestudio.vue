@@ -187,7 +187,7 @@ export default {
     margin-top: 50px;
     padding: 20px 10px;
     line-height: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .role {
