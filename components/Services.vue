@@ -1,5 +1,6 @@
 <template>
-  <div id="studios">
+  <div id="studios" v-observe-visibility="print">
+    <img src="@/assets/camera.png" class="side-image d-none d-lg-block" :class="className" />
     <div class="container">
       <div class="row">
         <div class="col-lg-4 p-4 offset-lg-4">
@@ -60,6 +61,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueObserveVisibility from 'vue-observe-visibility'
+
+Vue.use(VueObserveVisibility)
+
 import StudioCard from '@/components/StudioCard'
 import data from '@/contents/studios.json'
 export default {
@@ -68,10 +74,40 @@ export default {
   },
   data() {
     return {
-      studios: data
+      studios: data,
+      className: '',
+      className2: ''
+    }
+  },
+  methods: {
+    print(isVisible, entry) {
+      if (isVisible) {
+        this.className = 'popOut'
+      } else {
+        this.className = 'none'
+      }
     }
   }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.side-image {
+  position: absolute;
+  left: 0%;
+  transform: translate(-50%, 0%) rotate(60deg);
+  height: 800px;
+}
+.popOut {
+  animation: popOut 1s;
+}
+
+@keyframes popOut {
+  from {
+    transform: translate(-50%, 0%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, 0%) rotate(60deg);
+  }
+}
+</style>

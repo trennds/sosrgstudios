@@ -1,5 +1,10 @@
 <template>
   <div v-observe-visibility="print">
+    <img
+      src="@/assets/lens.png"
+      class="side-image d-none d-lg-block"
+      :class="className"
+    />
     <div class="container mt-5">
       <div class="row">
         <div class="col-sm-4 col-lg-8 offset-md-1">
@@ -23,13 +28,13 @@
         </div>
       </div>
       <div class="row justify-content-between pointer-row">
-         <div
-            class="pointer"
-            :class="index == currIndex ? 'pointer-active' : 'none'"
-            v-for="(item, index) in notifs"
-            :key="item.title"
-            @click="click(index)"
-          ></div>
+        <div
+          class="pointer"
+          :class="index == currIndex ? 'pointer-active' : 'none'"
+          v-for="(item, index) in notifs"
+          :key="item.title"
+          @click="click(index)"
+        ></div>
       </div>
     </div>
   </div>
@@ -48,15 +53,20 @@ export default {
     return {
       currIndex: 0,
       notifs: data,
-      currentClass: 'none'
+      currentClass: 'none',
+      className: ''
     }
   },
   mounted() {
     var self = this
     setInterval(this.changeSlide, 4000)
-    axios.get('https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/notifications/index').then((res) => {
-      self.notifs = res.data.Items
-    })
+    axios
+      .get(
+        'https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/notifications/index'
+      )
+      .then(res => {
+        self.notifs = res.data.Items
+      })
   },
   methods: {
     click(index) {
@@ -69,8 +79,10 @@ export default {
     print(isVisible, entry) {
       if (isVisible) {
         this.currentClass = 'brighten'
+        this.className = 'slideIn'
       } else {
         this.currentClass = 'none'
+        this.className = 'none'
       }
     }
   }
@@ -148,17 +160,37 @@ export default {
   margin-right: 15px;
 }
 
-@media screen and (max-width: 699px) {
-  .role-container .role-title {
-  font-size: 2rem;
-}
-.role-container .role-description {
-  font-size: 1.5rem;
+.side-image {
+  position: absolute;
+  left: 0px;
+  height: 300px;
 }
 
-.role-container h1:after {
-  transform: translate(0%, 50px);
+.slideIn {
+  transform: translate(-50%, -30%);
+  animation: slideIn 1s;
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-100%, -30%)
+  }
+  /* 50% {
+    transform: translate(-75%, -30%)
+  } */
+}
+
+@media screen and (max-width: 699px) {
+  .role-container .role-title {
+    font-size: 2rem;
+  }
+  .role-container .role-description {
+    font-size: 1.5rem;
+  }
+
+  .role-container h1:after {
+    transform: translate(0%, 50px);
+  }
 }
 
 @media screen and (min-width: 700px) {

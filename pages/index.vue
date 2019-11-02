@@ -3,7 +3,7 @@
     <HeroIndex
       videoUrl="hero.mp4"
       title="Welcome to an Art Industry."
-      description="SosrG Studios"
+      description="SosrG StudioS"
     />
     <div class="container">
       <div class="row justify-content-center p-4">
