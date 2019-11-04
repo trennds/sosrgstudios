@@ -18,7 +18,8 @@
         </div>
       </div>
     </div>
-    <Works/>
+    <Works title="Our Works" :images="images" />
+    <Works title="Rayan Buddh Arts" :images="rayanBudh" />
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
@@ -59,7 +60,32 @@ export default {
   data() {
     return {
       content: contents,
-      roles: []
+      roles: [],
+      images:  [
+        'works/img11.jpg',
+        'works/img14.jpg',
+        'works/img17.jpg',
+        'works/img20.jpg',
+        'works/img23.jpg',
+        'works/img26.jpg',
+        'works/img29.jpg',
+        'works/img32.jpg',
+        'works/img35.jpg',
+        'works/img38.jpg'
+      ],
+      rayanBudh: [
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh1.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh2.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh3.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh4.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh5.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh6.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh7.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh8.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh9.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh10.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh11.jpeg',
+      ]
     }
   },
   mounted() {

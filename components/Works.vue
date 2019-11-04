@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="title-container">
-        <h1 class="display-4">Our Works</h1>
+        <h1 class="display-4">{{ title }}</h1>
         <div class="controls">
           <div class="control-left" @click="prev"><i class="fa fa-chevron-left"></i></div>
           <div class="control-right" @click="next"><i class="fa fa-chevron-right"></i></div>
@@ -24,21 +24,10 @@
 
 <script>
 export default {
+  props: ['title', 'images'],
   data() {
     return {
-      index: 0,
-      images: [
-        'works/img11.jpg',
-        'works/img14.jpg',
-        'works/img17.jpg',
-        'works/img20.jpg',
-        'works/img23.jpg',
-        'works/img26.jpg',
-        'works/img29.jpg',
-        'works/img32.jpg',
-        'works/img35.jpg',
-        'works/img38.jpg'
-      ]
+      index: 0
     }
   },
   methods: {

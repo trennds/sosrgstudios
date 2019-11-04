@@ -20,6 +20,19 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
+          <h1 class="display-4">Bharam by ZEE5</h1>
+          <div class="works">
+            <img src="https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/bhram.jpeg" alt="cowmedy-poster" />
+            <h2>
+              Shamsher Singh Sam as Casting Director
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title-container">
           <h1 class="display-4">Choose Your Role</h1>
         </div>
       </div>
@@ -183,5 +196,25 @@ export default {
     line-height: 2.5rem;
     font-size: 1.5rem;
   }
+}
+
+.works img {
+  width: 80%;
+  padding: 5px;
+  margin: 25px 0px;
+}
+
+.works {
+  margin-bottom: 60px;
+}
+
+.works h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  background-color: white;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%, 3.5rem);
 }
 </style>

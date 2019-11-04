@@ -34,7 +34,7 @@
       <hr />
     </div>
     <Notifications />
-    <div class="title-container">
+    <div class="title-container mt-5">
       <h1 class="display-4">Current Posts</h1>
     </div>
     <Post />

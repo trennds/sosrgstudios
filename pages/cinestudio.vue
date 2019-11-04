@@ -40,6 +40,19 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
+          <h1 class="display-4">Our New Film Release</h1>
+          <div class="works">
+            <img src="https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/abhinav.jpeg" alt="cowmedy-poster" />
+            <h2>
+              Abhinav- Film by Yogesh Bhardwaj
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title-container">
           <h1 class="display-4">Choose Your Role</h1>
         </div>
       </div>
