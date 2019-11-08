@@ -50,6 +50,7 @@
         </div>
       </div>
     </div>
+    <AnimatedWorks title="Movie Releases" :images="images" />
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
@@ -74,6 +75,7 @@ import Works from '@/components/Works'
 import Hero from '@/components/Hero'
 import Role from '@/components/Role'
 import Youtube from '@/components/Youtube'
+import AnimatedWorks from '@/components/AnimatedWorks'
 import contents from '@/contents/cinestudio.json'
 
 import axios from 'axios'
@@ -85,12 +87,21 @@ export default {
     Youtube,
     StudioCard,
     Hero,
-    Role
+    Role,
+    AnimatedWorks
   },
   data() {
     return {
       content: contents,
-      roles: []
+      roles: [],
+      images: [
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/ek+ladki+ko+dekha+toh+aisa+laga.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/janbaaz.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/malaal.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/nakhra.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/satellite+shankar.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/sp+chauhan.jpeg'
+      ]
     }
   },
   mounted() {

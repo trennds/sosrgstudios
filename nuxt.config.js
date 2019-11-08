@@ -31,7 +31,8 @@ export default {
      */
     plugins: [
         '~/plugins/vue-lazysizes.client.js',
-        { src: '~plugins/ga.js', mode: 'client' }
+        { src: '~plugins/ga.js', mode: 'client' },
+        { src: '~plugins/jquery.js', ssr: false }
     ],
     /*
      ** Nuxt.js dev-modules

@@ -15,7 +15,8 @@
           About SosrG StudioS
         </h1>
         <p class="lead text-white" align="center">
-          Here we innovate, create and work together with the creative minds in the industry.
+          Here we innovate, create and work together with the creative minds in
+          the industry.
         </p>
       </div>
       <hr />

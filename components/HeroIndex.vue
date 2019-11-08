@@ -40,7 +40,9 @@ export default {
   }
 }
 </script>
+
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Fredericka+the+Great&display=swap');
 #hero {
   top: 0;
   bottom: 0;
@@ -49,7 +51,6 @@ export default {
 }
 #hero h1,
 h2 {
-  font-family: 'Roboto', sans-serif;
   color: white;
   /* animation-name: revealText; */
   animation-timing-function: linear;
@@ -65,10 +66,12 @@ h2 {
 #hero h1 {
   text-align: center;
   font-size: 2.25rem;
+  font-family: 'Fredericka the Great', cursive;
 }
 #hero h2 {
   margin-top: 40px;
   font-size: 5.5rem;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 #hero p {
