@@ -6,7 +6,7 @@
     variant="light"
     :class="$store.state.navbarClass"
   >
-    <b-navbar-brand href="#">Sosrg Studios</b-navbar-brand>
+    <b-navbar-brand href="#">Sosrg StudioS</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 

@@ -18,6 +18,9 @@ export default {
   components: {
     Loader
   },
+  data() {
+
+  },
   mounted() {
     $('.loader').hide()
 

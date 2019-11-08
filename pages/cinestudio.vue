@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <AnimatedWorks title="Movie Releases" :images="images" />
+    <!-- <AnimatedWorks title="Movie Releases" :images="images" /> -->
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">

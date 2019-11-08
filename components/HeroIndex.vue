@@ -66,12 +66,12 @@ h2 {
 #hero h1 {
   text-align: center;
   font-size: 2.25rem;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Fredericka the Great', cursive !important;
 }
 #hero h2 {
   margin-top: 40px;
   font-size: 5.5rem;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Archivo Black', sans-serif !important;
 }
 
 #hero p {
