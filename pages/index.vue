@@ -6,15 +6,16 @@
       description="SosrG StudioS"
     />
     <div class="container">
+      <img src="@/assets/cuteCamera.png" alt="Cute Camera" class="bottom-right" :class="$store.state.navbarClass"/>
       <div class="row justify-content-center p-4">
         <h1
-          class="display-3 text-white"
+          class="display-3"
           align="center"
           style="font-family: 'Bitter', serif;"
         >
           About SosrG StudioS
         </h1>
-        <p class="lead text-white" align="center">
+        <p class="lead" align="center">
           Here we innovate, create and work together with the creative minds in
           the industry.
         </p>
@@ -25,7 +26,7 @@
     <div class="container">
       <div class="row justify-content-center p-3">
         <h1
-          class="display-4 text-white"
+          class="display-4"
           align="center"
           style="font-family: 'Bitter', serif;"
         >
@@ -66,7 +67,6 @@ export default {
 .title-container {
   padding-top: 10px;
   text-align: center;
-  color: white;
 }
 
 .title-container h1::after {
@@ -82,5 +82,31 @@ export default {
 
 .title-container:hover h1::after {
   width: 50%;
+}
+
+.bottom-right {
+  position: fixed;
+  left: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: translate(-70%, -100%) rotate(-30deg);
+}
+
+.none {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+  animation: popOut 0.5s;
+}
+
+@keyframes popOut {
+  0% {
+    transform: translate(100%, 100%);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
 }
 </style>

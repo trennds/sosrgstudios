@@ -47,7 +47,6 @@ export default {
 .title-container {
   padding-top: 10px;
   text-align: center;
-  color: white;
 }
 
 .title-container h1::after {
@@ -90,7 +89,6 @@ export default {
   content: '';
   position: absolute;
   width: 50%;
-  background-color: white;
   height: 2px;
   left: 50%;
   transform: translate(-50%, 3.5rem);

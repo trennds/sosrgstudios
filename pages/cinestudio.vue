@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <!-- <AnimatedWorks title="Movie Releases" :images="images" /> -->
+    <AnimatedWorks title="Movie Releases" :images="images" />
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
@@ -152,10 +152,6 @@ export default {
   animation: vibrate 2s infinite;
 }
 
-#godown a {
-  color: white;
-}
-
 @keyframes vibrate {
   0% {
     opacity: 0;
@@ -171,7 +167,6 @@ export default {
 .title-container {
   padding-top: 10px;
   text-align: center;
-  color: white;
 }
 
 .title-container h1::after {
@@ -193,10 +188,9 @@ export default {
   margin-top: 40px;
 }
 .role {
-  box-shadow: 1px -1px 10px 1px rgba(255, 255, 255, 0.85);
+  box-shadow: 1px -1px 10px 1px rgba(22, 21, 21, 0.85);
   padding: 30px;
   font-size: 2rem;
-  color: white;
   border-radius: 5px;
 }
 
@@ -234,7 +228,6 @@ export default {
   content: '';
   position: absolute;
   width: 50%;
-  background-color: white;
   height: 2px;
   left: 50%;
   transform: translate(-50%, 3.5rem);

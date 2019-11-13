@@ -109,10 +109,6 @@ export default {
   animation: vibrate 2s infinite;
 }
 
-#godown a {
-  color: white;
-}
-
 @keyframes vibrate {
   0% {
     opacity: 0;
@@ -128,7 +124,6 @@ export default {
 .title-container {
   padding-top: 10px;
   text-align: center;
-  color: white;
 }
 
 .title-container h1::after {
@@ -150,10 +145,9 @@ export default {
   margin-top: 40px;
 }
 .role {
-  box-shadow: 1px -1px 10px 1px rgba(255, 255, 255, 0.85);
+  box-shadow: 1px -1px 10px 1px rgba(31, 30, 30, 0.85);
   padding: 30px;
   font-size: 2rem;
-  color: white;
   border-radius: 5px;
 }
 

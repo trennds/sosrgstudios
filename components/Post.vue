@@ -56,7 +56,6 @@ export default {
   padding: 20px;
   margin-top: 30px;
   border-style: solid;
-  color: white;
   border-width: 1px;
 }
 
@@ -64,7 +63,6 @@ export default {
   margin-left: 5px;
   padding: 10px;
   font-size: 1.7rem;
-  color: white;
 }
 
 .post .header img {
@@ -73,7 +71,6 @@ export default {
 }
 
 .post .body {
-  color: white;
   font-size: 1.2rem;
   margin-top: 10px;
   padding: 10px;
@@ -97,6 +94,6 @@ export default {
 .ruler {
   width: 98%;
   height: 2px;
-  background-color: white;
+  background-color: rgb(17, 16, 16);
 }
 </style>

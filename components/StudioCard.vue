@@ -4,9 +4,9 @@
     <img :src="image" alt="..." />
     <div class="desc">
       <div class="title" align="center">
-        <nuxt-link :to="url" class="text-white">{{ title }}</nuxt-link>
+        <nuxt-link :to="url">{{ title }}</nuxt-link>
       </div>
-      <p align="center" class="text-white">
+      <p align="center">
         {{ description }}
       </p>
     </div>
@@ -42,7 +42,7 @@ export default {
 .service {
   border: 1px solid;
   border-radius: 10px;
-  box-shadow: 1px -1px 32px 1px rgba(255, 255, 255, 0.85);
+  box-shadow: 1px -1px 32px 1px rgba(22, 21, 21, 0.85);
 }
 
 .service-lg {
@@ -98,7 +98,7 @@ export default {
 }
 @keyframes opacityExit {
   from {
-    box-shadow: 1px -1px 32px 1px rgba(255, 255, 255, 0.85);
+    box-shadow: 1px -1px 32px 1px rgba(31, 29, 29, 0.85);
     opacity: 1;
   }
   to {

@@ -93,7 +93,6 @@ export default {
 .role-container {
   background-color: transparent;
   padding: 20px;
-  color: white;
   opacity: 0.5;
   margin: 20px 10px;
   box-shadow: none;
@@ -104,7 +103,7 @@ export default {
 
 .brighten {
   opacity: 1;
-  box-shadow: 3px 4px 35px 19px rgba(255, 255, 255, 1);
+  box-shadow: 3px 4px 35px 19px rgb(31, 29, 29);
 }
 
 .role-container .role-title {
@@ -141,11 +140,11 @@ export default {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgb(26, 25, 25);
 }
 
 .pointer-active {
-  border-color: blue;
+  border-color: rgb(230, 230, 238);
   border-width: 5px;
   border-style: solid;
 }

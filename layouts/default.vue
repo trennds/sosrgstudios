@@ -9,7 +9,8 @@
 
 <style>
 body {
-  background-color: black !important;
+  background-color: white !important;
+  color: black !important;
   overflow-x: hidden;
 }
 
