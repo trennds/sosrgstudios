@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="title">{{ title }}</div>
+    <div class="title">
+      <h1 class="display-4">{{ title }}</h1></div>
     <div class="body">
       <div class="loader">
         <Loader />
@@ -54,7 +55,30 @@ export default {
 .body img {
   width: 20%;
   margin: 30px;
+  margin-top: 100px;
   height: 200px;
+  border-radius: 5px;
+  box-shadow: 7px 9px 13px 0px rgba(0,0,0,0.75);
+}
+
+.title {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.title h1::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  background-color: red;
+  height: 5px;
+  left: 50%;
+  transform: translate(-50%, 5rem);
+  transition: width 3s;
+}
+
+.title:hover h1::after {
+  width: 50%;
 }
 
 .body img:nth-child(odd) {
