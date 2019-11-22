@@ -20,11 +20,11 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
-          <h1 class="display-4">Bharam by ZEE5</h1>
+          <h1 class="display-4">Bhram- A Webseries by ZEE5</h1>
           <div class="works">
             <img src="https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/bhram.jpeg" alt="cowmedy-poster" />
             <h2>
-              Shamsher Singh Sam as Casting Director
+              Samsher Singh Sam as Casting Director
             </h2>
           </div>
         </div>
