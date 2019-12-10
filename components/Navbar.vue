@@ -55,7 +55,7 @@
         <b-nav-form>
           <b-button size="sm" class="my-2 my-sm-0 connect-button" type="submit"
             ><a
-              href="https://connect.sosrgstudios.com/welcome"
+              href="https://connect.sosrgstudios.com/"
               class="text-white"
               >SosrG Connect</a
             ></b-button
