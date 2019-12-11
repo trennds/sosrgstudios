@@ -5,7 +5,7 @@
         <p class="lead text-white">
           Enter into the world of artists, where they connect to grow and share their experiences.
         </p>
-        <a class="btn btn-lg m-2" href="https://connect.sosrgstudios.com/welcome" role="button"
+        <a class="btn btn-lg m-2" href="https://connect.sosrgstudios.com/" role="button"
           >Open SosrG Connect</a
         >
       </div>
