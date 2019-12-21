@@ -6,7 +6,12 @@
       description="SosrG StudioS"
     />
     <div class="container">
-      <img src="@/assets/cuteCamera.png" alt="Cute Camera" class="bottom-right" :class="$store.state.navbarClass"/>
+      <img
+        src="@/assets/cuteCamera.png"
+        alt="Cute Camera"
+        class="bottom-right"
+        :class="$store.state.navbarClass"
+      />
       <div class="row justify-content-center p-4">
         <h1
           class="display-3"
@@ -59,6 +64,19 @@ export default {
     Services,
     Notifications,
     Post
+  },
+  mounted() {
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date()
+    ;(function() {
+      var s1 = document.createElement('script'),
+        s0 = document.getElementsByTagName('script')[0]
+      s1.async = true
+      s1.src = 'https://embed.tawk.to/5dfe5abb27773e0d832a3529/default'
+      s1.charset = 'UTF-8'
+      s1.setAttribute('crossorigin', '*')
+      s0.parentNode.insertBefore(s1, s0)
+    })()
   }
 }
 </script>
