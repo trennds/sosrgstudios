@@ -1,19 +1,33 @@
 <template>
   <div>
-    <Hero
-      videoUrl="motion.mp4"
-      title="Welcome to SosrG Art and Craft Studio"
-      description=""
-    />
+    <Hero videoUrl="motion.mp4" title="Welcome to SosrG Art and Craft Studio" description />
     <div class="container">
       <div class="row justify-content-center">
         <div class="title-container">
           <h1 class="display-4">About the Studio</h1>
           <p>
-            We provide worksop and professional instructor(Master in their
-            respective fields) to the students who are interested in learning
-            Art and Craft and also our expert is available to answer all the
-            questions related to Art as well as Craft Works.
+            Here we provide artists to perform different forms of art, expose their art to the world and preserving the their rich culture.
+            This Studio include following roles.
+          </p>
+          <p>
+            <b>Design</b> <br>
+            1. Fashion Designer <br>
+            2. Textile Designer <br>
+            3. Apparel Designer <br>
+            4. Lifestyle Accessories Designer <br>
+            5. Product Designer <br>
+            6. Interior Designer <br>
+            7. Graphics Designer <br>
+            <br>
+            <b>Visual Art</b> <br>
+            1. Applied Artist <br>
+            2. Painting Artist <br>
+            3. Sculptor <br>
+            4. Animator <br>
+            # Architect <br>
+            # Decorator (Ext. / Int.) <br>
+            # Other Art & Craft Work <br>
+            #Trainer in any Art or Craft <br>
           </p>
         </div>
       </div>
@@ -61,7 +75,7 @@ export default {
     return {
       content: contents,
       roles: [],
-      images:  [
+      images: [
         'works/img11.jpg',
         'works/img14.jpg',
         'works/img17.jpg',
@@ -84,15 +98,19 @@ export default {
         'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh8.jpeg',
         'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh9.jpeg',
         'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh10.jpeg',
-        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh11.jpeg',
+        'https://s3.ap-south-1.amazonaws.com/assets.sosrgstudios.com/works/rayanbudh11.jpeg'
       ]
     }
   },
   mounted() {
     var self = this
-    axios.get('https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/roles/38c994f0-f2b8-11e9-bba2-d1d49d62f296').then(res => {
-      self.roles = res.data
-    })
+    axios
+      .get(
+        'https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/roles/38c994f0-f2b8-11e9-bba2-d1d49d62f296'
+      )
+      .then(res => {
+        self.roles = res.data
+      })
   }
 }
 </script>

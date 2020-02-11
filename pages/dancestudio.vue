@@ -10,11 +10,9 @@
         <div class="title-container">
           <h1 class="display-4">About the Studio</h1>
           <p>
-            We provide an opportunity for artists from different fields of Dance
-            to perform individually or in a group, we provide a platform where
-            all dancers get proper training with our professional choreographers
-            and then performs and also our expert is available to answer all the
-            questions related to Dance or it’s form.
+            Through this studio we have created a chain system around our cities
+            for dancers to learn or rehearse after joining the dance classes.
+            Fine choreography is taught by our expertise.
           </p>
         </div>
       </div>
@@ -23,6 +21,7 @@
       <div class="row justify-content-center">
         <div class="title-container">
           <h1 class="display-4">Choose Your Role</h1>
+          <p>This studio includes the following roles-</p>
         </div>
       </div>
       <div class="roles-container">
@@ -64,9 +63,13 @@ export default {
   },
   mounted() {
     var self = this
-    axios.get('https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/roles/738856d0-f2b8-11e9-bba2-d1d49d62f296').then(res => {
-      self.roles = res.data
-    })
+    axios
+      .get(
+        'https://pxpwk6ap0j.execute-api.ap-south-1.amazonaws.com/latest/roles/738856d0-f2b8-11e9-bba2-d1d49d62f296'
+      )
+      .then(res => {
+        self.roles = res.data
+      })
   }
 }
 </script>

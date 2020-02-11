@@ -1,10 +1,6 @@
 <template>
   <div>
-    <HeroIndex
-      videoUrl="hero.mp4"
-      title="Welcome to an Art Industry."
-      description="SosrG StudioS"
-    />
+    <HeroIndex videoUrl="hero.mp4" title="Welcome to an Art Industry." description="SosrG StudioS" />
     <div class="container">
       <img
         src="@/assets/cuteCamera.png"
@@ -17,9 +13,7 @@
           class="display-3"
           align="center"
           style="font-family: 'Bitter', serif;"
-        >
-          About SosrG StudioS
-        </h1>
+        >About SosrG StudioS</h1>
         <p class="lead" align="center">
           Here we innovate, create and work together with the creative minds in
           the industry.
@@ -30,21 +24,25 @@
     <Services />
     <div class="container">
       <div class="row justify-content-center p-3">
-        <h1
-          class="display-4"
-          align="center"
-          style="font-family: 'Bitter', serif;"
-        >
-          Notifications
-        </h1>
+        <h1 class="display-4" align="center" style="font-family: 'Bitter', serif;">Notifications</h1>
       </div>
       <hr />
     </div>
     <Notifications />
     <div class="title-container mt-5">
-      <h1 class="display-4">Current Posts</h1>
+      <h1 class="display-4">Our Missions</h1>
     </div>
-    <Post />
+    <p class="mission-text">
+      <ol>
+        <li>To guide with the helps of our respective expertise in a proper way to all artist, belongings to any departments.</li>
+        <li>To present Public Exhibition/Event in minimum 3 states in a year.</li>
+        <li>To provide better platform for artist to perform.</li>
+        <li>To develop and maintain equipment to artist in their work.</li>
+        <li>To provide an Art educational opportunity and job.</li>
+        <li>To offer regularly adult and children classes/Auditions/Seminar/workshops.</li>
+        <li>To expand program and activities with increased facilities.</li>
+      </ol>  
+    </p>
   </div>
 </template>
 
@@ -109,6 +107,18 @@ export default {
   opacity: 0.7;
   transform: translate(-70%, -100%) rotate(-30deg);
 }
+
+@media only screen and (max-width: 500px) {
+  .bottom-right {
+    display: none;
+    }
+}
+
+.mission-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  }
 
 .none {
   visibility: hidden;
