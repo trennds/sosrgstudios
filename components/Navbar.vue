@@ -4,7 +4,7 @@
     fixed="top"
     type="light"
     variant="light"
-    :class="$store.state.navbarClass"
+    class="$store.state.navbarClass"
   >
     <b-navbar-brand href="#">SosrG StudioS</b-navbar-brand>
 

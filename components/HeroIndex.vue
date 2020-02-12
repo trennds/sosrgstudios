@@ -1,9 +1,8 @@
 <template>
   <div v-observe-visibility="print">
     <div id="hero">
-      <video autoplay muted loop class="bg-video">
-        <source :src="require(`~/assets/${videoUrl}`)" type="video/mp4" />
-      </video>
+      <!-- <img src="hero1.png" alt=""> -->
+      <img src="undraw.svg" alt />
       <div class="content" :class="revealText">
         <h1>{{ title }}</h1>
         <h2>{{ description }}</h2>
@@ -48,73 +47,70 @@ export default {
   bottom: 0;
   right: 0;
   position: relative;
+  height: 100vh;
 }
 #hero h1,
 h2 {
-  color: white;
+  color: black;
   /* animation-name: revealText; */
   animation-timing-function: linear;
 }
 #hero .content {
   position: absolute;
-  text-align: center;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -60%);
+  text-align: left;
+  left: 5%;
+  top: 50%;
+  transform: translate(-0%, -50%);
 }
 
 #hero h1 {
-  text-align: center;
-  font-size: 2.25rem;
+  text-align: left;
+  font-size: 2rem;
   font-family: 'Fredericka the Great', cursive !important;
 }
 #hero h2 {
-  margin-top: 40px;
-  font-size: 5.5rem;
+  margin-top: 10px;
+  font-size: 4.5rem;
   font-family: 'Archivo Black', sans-serif !important;
 }
 
 #hero p {
-  color: white;
   font-size: 2rem;
 }
-#hero .bg-video {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0px;
-  padding: 0;
-  /* opacity: 0.7; */
+
+#hero img {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  max-height: 500px;
 }
 
 @media screen and (max-width: 700px) {
-  #hero .bg-video {
-    height: 100vh;
-    transform: translateX(-50%);
-  }
   #hero h1 {
-        font-size: 3rem;
-        margin-left: 2px !important;
-        margin-right: 2px !important;
-    }
-    #hero h2 {
-      font-size: 1.5rem;
-    }
+    font-size: 1.5rem;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    text-align: center;
+  }
+  #hero h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-   #hero .content {
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -20%);
-}
-}
+  #hero .content {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+  }
 
-@media screen and (min-width: 701px){
-  #hero .bg-video {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  #hero img {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -126,14 +122,11 @@ h2 {
   0% {
     position: absolute;
     opacity: 0;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, 100px);
+    top: 100%;
   }
   100% {
     position: absolute;
     opacity: 1;
-    left: 50%;
   }
 }
 </style>
