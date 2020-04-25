@@ -117,7 +117,7 @@ export default {
 
 <style scoped>
 #hero-section #hero-back {
-  /* background-image: url('../assets/cine.jpg'); */
+  /* background-image: url('/assets/cine.jpg'); */
   opacity: 0.9;
   height: 100vh;
   background-position: center;

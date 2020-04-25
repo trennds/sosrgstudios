@@ -25,7 +25,7 @@
         <div class="title-container">
           <h1 class="display-4">Our Works</h1>
           <div class="works">
-            <img src="@/assets/cowmedy.jpeg" alt="cowmedy-poster" />
+            <img src="/assets/cowmedy.jpeg" alt="cowmedy-poster" />
             <h2>
               <a
                 href="https://www.facebook.com/SpinningWorldProductions/videos/t.100002973274636/1532307493545761/?type=2&video_source=user_video_tab"
@@ -115,7 +115,7 @@ export default {
 
 <style scoped>
 #hero-section #hero-back {
-  /* background-image: url('../assets/cine.jpg'); */
+  /* background-image: url('/assets/cine.jpg'); */
   opacity: 0.9;
   height: 100vh;
   background-position: center;

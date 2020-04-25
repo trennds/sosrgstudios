@@ -14,7 +14,7 @@
 
 <style scoped>
 .welcome {
-  background-image: url('../assets/drawing.jpg');
+  background-image: url('/assets/drawing.jpg');
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;

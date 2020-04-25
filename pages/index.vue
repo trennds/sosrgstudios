@@ -3,7 +3,7 @@
     <HeroIndex videoUrl="hero.mp4" title="Welcome to an Art Industry." description="SosrG StudioS" />
     <div class="container">
       <img
-        src="@/assets/cuteCamera.png"
+        src="/assets/cuteCamera.png"
         alt="Cute Camera"
         class="bottom-right"
         :class="$store.state.navbarClass"
@@ -41,7 +41,7 @@
         <li>To provide an Art educational opportunity and job.</li>
         <li>To offer regularly adult and children classes/Auditions/Seminar/workshops.</li>
         <li>To expand program and activities with increased facilities.</li>
-      </ol>  
+      </ol>
     </p>
   </div>
 </template>

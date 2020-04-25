@@ -1,7 +1,7 @@
 <template>
   <div v-observe-visibility="print">
     <img
-      src="@/assets/lens.png"
+      src="/assets/lens.png"
       class="side-image d-none d-lg-block"
       :class="className"
     />

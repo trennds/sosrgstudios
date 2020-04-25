@@ -1,6 +1,6 @@
 <template>
   <div id="studios" v-observe-visibility="print">
-    <img src="@/assets/camera.png" class="side-image d-none d-lg-block" :class="className" />
+    <img src="/assets/camera.png" class="side-image d-none d-lg-block" :class="className" />
     <div class="container">
       <div class="row">
         <div class="col-lg-4 p-4 offset-lg-4">

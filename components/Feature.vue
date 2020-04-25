@@ -8,14 +8,14 @@
         </p>
       </div>
       <div class="d-none d-md-block col-5">
-        <img src="../assets/beach.jpg" alt="" />
+        <img src="/assets/beach.jpg" alt="" />
       </div>
     </div>
   </div>
   <div class="container-fluid content-left" v-else>
     <div class="row">
       <div class="col-5 d-none d-md-block">
-        <img src="../assets/graphics.jpg" alt="" />
+        <img src="/assets/graphics.jpg" alt="" />
       </div>
       <div class="col-12 col-lg-7 content">
         <h1 class="title">{{ title }}</h1>
